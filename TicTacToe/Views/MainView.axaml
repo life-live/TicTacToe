@@ -1,0 +1,65 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:TicTacToe.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="500"
+             x:Class="TicTacToe.Views.MainView"
+             Foreground="White"
+             Background="#171C2C">
+    <Design.DataContext>
+        <viewModels:MainViewModel />
+    </Design.DataContext>
+    <Grid>
+        <TextBlock x:Name="AnnouncementWin" FontSize="20" Margin="0, -300, 0, 0" Height="60" Width="155"
+                   TextAlignment="Center" HorizontalAlignment="Center" />
+        <Line x:Name="WiningLine" StartPoint="0, 0" EndPoint="0, 210" Stroke="WhiteSmoke" Margin="0, 0,0 ,0 "
+              VerticalAlignment="Center" HorizontalAlignment="Center" IsVisible="False" />
+
+        <Grid>
+            <Button x:Name="FirstFirst" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="-150, -150, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="FirstFirst_OnClick" />
+            <Button x:Name="FirstSecond" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="0, -150, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="FirstSecond_OnClick" />
+            <Button x:Name="FirstThird" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="150, -150, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="FirstThird_OnClick" />
+        </Grid>
+        <Grid>
+            <Button x:Name="SecondFirst" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="-150, 0, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="SecondFirst_OnClick" />
+            <Button x:Name="SecondSecond" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="0, 0, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="SecondSecond_OnClick" />
+            <Button x:Name="SecondThird" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="150, 0, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="SecondThird_OnClick" />
+        </Grid>
+        <Grid>
+            <Button x:Name="ThirdFirst" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="-150, 150, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="ThirdFirst_OnClick" />
+            <Button x:Name="ThirdSecond" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="0, 150, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="ThirdSecond_OnClick" />
+            <Button x:Name="ThirdThird" FontSize="36" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Margin="150, 150, 0, 0" Height="55" Width="55"
+                    HorizontalAlignment="Center"
+                    Click="ThirdThird_OnClick" />
+        </Grid>
+        <Button x:Name="FinishGame" FontSize="18" Content="Finish Game" HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" Margin="0, 350, 0, 0" Height="60" Width="155"
+                HorizontalAlignment="Center" Click="FinishGame_OnClick" />
+    </Grid>
+</UserControl>
