@@ -160,9 +160,9 @@ public partial class MainView : UserControl
         }
     }
 
-    private void SelectingValue(RoutedEventArgs e, ContentControl? button)
+    private void CellButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        if (button is null) return;
+        if (sender is not Button button) return;
         ContentControl[] cells =
         {
             FirstFirst, FirstSecond, FirstThird,
@@ -184,50 +184,5 @@ public partial class MainView : UserControl
         if (cells.Any(cell => cell.Content is null)) return;
         AnnouncementWin.Text = "Draw";
         FinishGame.Content = "Start new game";
-    }
-
-    private void FirstFirst_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void FirstSecond_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void FirstThird_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void SecondFirst_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void SecondSecond_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void SecondThird_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void ThirdFirst_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void ThirdSecond_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
-    }
-
-    private void ThirdThird_OnClick(object? sender, RoutedEventArgs e)
-    {
-        SelectingValue(e, sender as Button);
     }
 }
