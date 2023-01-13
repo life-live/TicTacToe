@@ -21,43 +21,43 @@
             <Button x:Name="FirstFirst" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="-150, -150, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="FirstFirst_OnClick" />
+                    Click="CellButton_OnClick" />
             <Button x:Name="FirstSecond" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="0, -150, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="FirstSecond_OnClick" />
+                    Click="CellButton_OnClick" />
             <Button x:Name="FirstThird" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="150, -150, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="FirstThird_OnClick" />
+                    Click="CellButton_OnClick" />
         </Grid>
         <Grid>
             <Button x:Name="SecondFirst" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="-150, 0, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="SecondFirst_OnClick" />
+                    Click="CellButton_OnClick" />
             <Button x:Name="SecondSecond" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="0, 0, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="SecondSecond_OnClick" />
+                    Click="CellButton_OnClick" />
             <Button x:Name="SecondThird" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="150, 0, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="SecondThird_OnClick" />
+                    Click="CellButton_OnClick" />
         </Grid>
         <Grid>
             <Button x:Name="ThirdFirst" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="-150, 150, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="ThirdFirst_OnClick" />
+                    Click="CellButton_OnClick" />
             <Button x:Name="ThirdSecond" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="0, 150, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="ThirdSecond_OnClick" />
+                    Click="CellButton_OnClick" />
             <Button x:Name="ThirdThird" FontSize="36" HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center" Margin="150, 150, 0, 0" Height="55" Width="55"
                     HorizontalAlignment="Center"
-                    Click="ThirdThird_OnClick" />
+                    Click="CellButton_OnClick" />
         </Grid>
         <Button x:Name="FinishGame" FontSize="18" Content="Finish Game" HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center" Margin="0, 350, 0, 0" Height="60" Width="155"
